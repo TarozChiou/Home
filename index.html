@@ -1,112 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <title>TarozChiou's Space</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+        <title>TarozChiou's Space</title>
+    </head>
 
-<body>
-    <header>
-        <nav class="navbar">
-            <h1 class="logo">Logo</h1>
-            <ul>
-                <li>
-                    <a href="">aaaa</a>
-                </li>
-                <li>
-                    <a href="">bbbb</a>
-                </li>
-                <li>
-                    <a href="">cccc</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <body>
+        <header>
+            <nav class="navbar">
+                <h1 class="logo">Logo</h1>
+                <ul>
+                    <li>
+                        <a href="#" id="top">aaaa</a>
+                    </li>
+                    <li>
+                        <a href="#" id="sec1">bbbb</a>
+                    </li>
+                    <li>
+                        <a href="#" id="sec2">cccc</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <section class="cover">
-            <div class="intro">
-                <h2>AAAA</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum itaque..</p>
-            </div>
-        </section>
+        <main>
+            <section class="cover" id="cv">
+                <div class="intro">
+                    <h2>AAAA</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum itaque..</p>
+                </div>
+            </section>
 
-        <section class="container">
-            <div class="recent">
-                <h2>近日練習/Recent Practice</h2>
+            <section class="container" id="ct1">
+                <div class="recent">
+                    <h2>近日練習/Recent Practice</h2>
 
-                <a href="#" id="img"></a>
-                <a href="#" id="img"></a>
-                <a href="#" id="img"></a>
-                <a href="#" id="img"></a>
-                <a href="#" id="img"></a>
+                    <a href="#" id="img"></a>
+                    <a href="#" id="img"></a>
+                    <a href="#" id="img"></a>
+                    <a href="#" id="img"></a>
+                    <a href="#" id="img"></a>
 
-                <span>ddd</span>
-                <span>ccc</span>
-                <span>ccc</span>
-                <span>ccc</span>
-                <span>ccc</span>
-            </div>
-        </section>
+                    <span>ddd</span>
+                    <span>ccc</span>
+                    <span>ccc</span>
+                    <span>ccc</span>
+                    <span>ccc</span>
+                </div>
+            </section>
 
-        <hr>
+            <hr>
 
-        <section class="container2">
-            <h2>作品集/Profolio</h2>
-            <form class="profolio">
-                <div class="project">
-                    <div class="thumbnail" id="img2"></div>
-                    <div class="info">
-                        <div>
-                            <h3>dzfxgchjh</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis ducimus
-                                saepe iusto tempore molestiae.</p>
+            <section class="container2" id="ct2">
+                <h2>作品集/Profolio</h2>
+                <form class="profolio">
+                    <div class="project">
+                        <div class="thumbnail" id="img2"></div>
+                        <div class="info">
+                            <div>
+                                <h3>dzfxgchjh</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis ducimus
+                                    saepe iusto tempore molestiae.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="project">
-                    <div class="thumbnail" id="img2"></div>
-                    <div class="info">
-                        <div>
-                            <h3>dzfxgchjh</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis ducimus
-                                saepe iusto tempore molestiae.</p>
+                    <div class="project">
+                        <div class="thumbnail" id="img2"></div>
+                        <div class="info">
+                            <div>
+                                <h3>dzfxgchjh</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis ducimus
+                                    saepe iusto tempore molestiae.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="project">
-                    <div class="thumbnail" id="img2"></div>
-                    <div class="info">
-                        <div>
-                            <h3>dzfxgchjh</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis ducimus
-                                saepe iusto tempore molestiae.</p>
+                    <div class="project">
+                        <div class="thumbnail" id="img2"></div>
+                        <div class="info">
+                            <div>
+                                <h3>dzfxgchjh</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis ducimus
+                                    saepe iusto tempore molestiae.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </form>
-        </section>
+                </form>
+            </section>
 
-    </main>
+        </main>
 
-    <script>
-        $(window)
-            .on("scroll", function () {
-                if ($(this).scrollTop()) {
-                    $("nav").addClass("scrolled");
-                } else {
-                    $("nav").removeClass("scrolled")
-                }
-            })
-    </script>
+        <script>
+            $(window)
+                .on("scroll", function () {
+                    if ($(this).scrollTop()) {
+                        $("nav").addClass("scrolled");
+                    } else {
+                        $("nav").removeClass("scrolled")
+                    }
+                })
 
-</body>
+            $(document).ready(function () { //使用JQ語法，JQ ready的function是必要的
+                $(function () {
+                    $('#top')
+                        .click(function () {
+                            $('html,body').animate({scrollTop:$('#cv').offset().top}, 300);
+                        });
+
+                    $('#sec1')
+                        .click(function () {
+                            $('html,body').animate({scrollTop:($('#ct1').offset().top)-95}, 300);
+                        });
+
+                    $('#sec2')
+                        .click(function () {
+                            $('html,body').animate({scrollTop:($('#ct2').offset().top)-125}, 300);
+                        });
+                });
+            });
+        </script>
+
+    </body>
 
 </html>
