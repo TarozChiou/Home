@@ -32,7 +32,7 @@ nav {
     height: 3em;
     width: 100%;
 
-    font-size: 2em;
+    font-size: 1.5em;
     transition: 0.3s;
 }
 
@@ -46,7 +46,7 @@ nav ul li {
 }
 
 nav.scrolled {
-    background: rgba(0,0,0, 0.7);
+    background: rgba(0,0,0, 0.8);
 }
 
 .cover {
@@ -75,6 +75,8 @@ nav.scrolled {
 }
 
 .container {
+    margin: 20px 0;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,7 +96,7 @@ nav.scrolled {
 }
 
 .recent h2{
-    margin: 30px;
+    margin: 20px;
     grid-column: span 3;
 }
 
@@ -124,8 +126,12 @@ nav.scrolled {
     color: white;
 }
 
+.container2 h2{
+    margin-top: 20px;
+}
+
 .profolio{
-    margin: 30px;
+    margin: 20px;
     width: 70%;
 }
 
@@ -151,7 +157,6 @@ nav.scrolled {
 }
 
 hr{
-    margin: 30px 0;
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
