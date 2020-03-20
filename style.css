@@ -11,7 +11,7 @@ html{
 
 body{
     background: linear-gradient(90deg, black, #4e4e4e, black);
-    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 a,
@@ -95,15 +95,15 @@ nav.scrolled {
 
 .recent h2{
     margin: 30px;
-    grid-column: span 5;
+    grid-column: span 3;
 }
 
 
 .recent a{
     margin: 10px;
     display: grid;
-    height:113px;
-    width:200px;
+    height:169px;
+    width:300px;
     border: 1px solid black;
 }
 
@@ -137,6 +137,7 @@ nav.scrolled {
 }
 
 .thumbnail{
+    margin: auto;
     height: 270px;
     width: 480px;
     background: url(pic/default.jpg) center no-repeat;
@@ -156,17 +157,38 @@ hr{
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
 }
 
-/* @media(max-width: 991px){
-    .container {
-        flex-direction: column;
-    }
-    
+@media(max-width: 991px){
     .recent h2{
-        margin: 30px;
         grid-column: span 1;
     }
 
-} */
+    .recent a{
+        margin: 10px;
+        display: grid;
+        height:225px;
+        width:400px;
+        border: 1px solid black;
+    }
+
+    .project{
+        flex-direction: column;
+    }
+
+    .info{
+        margin:auto;
+        padding: 10px;
+        width:100%;
+    }
+
+    .info h3{
+        text-align:center;
+    }
+
+    .info p{
+        text-align: justify;
+    }
+
+}
 
 
 /* .profolio{
