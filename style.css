@@ -125,9 +125,8 @@ nav.scrolled {
 }
 
 .profolio{
-    position: relative;
     margin: 30px;
-    width: 65%;
+    width: 70%;
 }
 
 .project{
@@ -137,6 +136,7 @@ nav.scrolled {
 }
 
 .thumbnail{
+    position: relative;
     margin: auto;
     height: 270px;
     width: 480px;
@@ -170,8 +170,20 @@ hr{
         border: 1px solid black;
     }
 
+    .profolio{
+        width: 90%;
+    }
+
     .project{
         flex-direction: column;
+    }
+
+    .thumbnail{
+        margin: auto;
+        height: 225px;
+        width: 400px;
+        background: url(pic/default.jpg) center no-repeat;
+        background-size: cover;
     }
 
     .info{
@@ -187,7 +199,6 @@ hr{
     .info p{
         text-align: justify;
     }
-
 }
 
 
