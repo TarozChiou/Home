@@ -2,14 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: tahoma, arial;
+    font-family: 'Amaranth', sans-serif;
 }
 
-html{
+html {
     scroll-behavior: auto;
 }
 
-body{
+body {
     background: linear-gradient(90deg, black, #4e4e4e, black);
     overflow-x: hidden;
 }
@@ -46,7 +46,18 @@ nav ul li {
 }
 
 nav.scrolled {
-    background: rgba(0,0,0, 0.8);
+    background: rgba(0, 0, 0, 0.8);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
 }
 
 .cover {
@@ -63,24 +74,56 @@ nav.scrolled {
 
 .intro {
     color: white;
-    text-shadow: 
-    0 0em 1em black, 
-    0 0em 1.5em black, 
-    0 0em 2em black;
+    text-shadow: 0 0 1em black, 0 0 1.5em black, 0 0 2em black;
     text-align: center;
 }
 
-.intro h2{
+.intro h2 {
     font-size: 3em;
 }
 
-.container {
-    margin: 20px 0;
+.container1 {
+    margin: 30px 0;
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    height: 100%;
+    width: 100%;
+    font-size: 1.5em;
+    color: white;
+}
+
+.container1 h2 {
+    margin-bottom: 30px;
+}
+
+.profolio {
+    width: 80%;
+}
+
+.project {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid cyan; */
+}
+
+.image {
+    width: 50%;
+}
+
+.info {
+    margin: auto;
+    padding-left: 20px;
+    width: 50%;
+}
+
+.container2 {
+    margin: 30px 0;
 
     height: 100%;
     width: 100%;
@@ -89,122 +132,55 @@ nav.scrolled {
     text-align: center;
 }
 
-.recent{
+.recent {
     position: relative;
+    margin: 0 auto;
+    width: 80%;
     display: grid;
-    place-items: center;
+    /* place-items: center; */
 }
 
-.recent h2{
-    margin: 20px;
-    grid-column: span 3;
+.recent h2 {
+    margin-bottom: 30px;
+    grid-column: span 4;
 }
 
-
-.recent a{
-    margin: 10px;
-    display: grid;
-    height:169px;
-    width:300px;
-    border: 1px solid black;
-}
-
-#img{
-    background: url(pic/default.jpg) center no-repeat;
-    background-size: cover;
-}
-
-.container2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    height: 100%;
-    width: 100%;
-    font-size: 1.5em;
-    color: white;
-}
-
-.container2 h2{
-    margin-top: 20px;
-}
-
-.profolio{
-    margin: 20px;
-    width: 70%;
-}
-
-.project{
-    margin-bottom: 50px;
-    display: flex;
-    /* border: 1px solid cyan; */
-}
-
-.thumbnail{
-    position: relative;
-    margin: auto;
-    height: 270px;
-    width: 480px;
-    background: url(pic/default.jpg) center no-repeat;
-    background-size: cover;
-}
-
-.info{
-    margin:auto;
-    padding-left: 20px;
-    width:50%;
-}
-
-hr{
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
-}
-
-@media(max-width: 991px){
-    .recent h2{
-        grid-column: span 1;
-    }
-
-    .recent a{
-        margin: 10px;
-        display: grid;
-        height:225px;
-        width:400px;
-        border: 1px solid black;
-    }
-
-    .profolio{
+@media(max-width: 991px) {
+    .profolio {
         width: 100%;
     }
 
-    .project{
+    .project {
+        padding: 10px;
         flex-direction: column;
     }
 
-    .thumbnail{
-        height: 225px;
-        width: 400px;
-        background: url(pic/default.jpg) center no-repeat;
-        background-size: cover;
-    }
-
-    .info{
-        margin:auto;
+    .info {
+        margin: auto;
         padding: 10px;
-        width:80%;
+        width: 80%;
     }
 
-    .info h3{
-        text-align:center;
+    .info h3 {
+        text-align: center;
     }
 
-    .info p{
+    .info p {
         text-align: justify;
     }
-}
 
+    .recent{
+        width: 70%;
+    } 
+
+    .recent div{
+        margin: 10px;
+    }
+    
+    .recent h2 {
+        grid-column: span 2;
+    }
+}
 
 /* .profolio{
     position: relative;
