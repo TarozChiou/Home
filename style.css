@@ -136,7 +136,6 @@ hr {
     margin: 0 auto;
     width: 80%;
     display: grid;
-    place-items: center;
 }
 
 .recent h2 {
