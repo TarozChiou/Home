@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background: linear-gradient(90deg, black, #4e4e4e, black);
+    background: linear-gradient(90deg, black, #303030, black);
     overflow-x: hidden;
 }
 
@@ -113,12 +113,11 @@ hr {
 }
 
 .image {
-    width: 50%;
+    width: 40%;
 }
 
 .info {
-    margin: auto;
-    padding-left: 20px;
+    padding: 0 20px;
     width: 50%;
 }
 
@@ -137,7 +136,7 @@ hr {
     margin: 0 auto;
     width: 80%;
     display: grid;
-    /* place-items: center; */
+    place-items: center;
 }
 
 .recent h2 {
@@ -161,11 +160,11 @@ hr {
 
     .info {
         margin: auto;
-        padding: 10px;
         width: 80%;
     }
 
     .info h3 {
+        padding: 10px;
         text-align: center;
     }
 
@@ -182,6 +181,7 @@ hr {
     }
     
     .recent h2 {
+        margin-bottom: 20px;
         grid-column: span 2;
     }
 }
